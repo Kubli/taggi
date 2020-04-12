@@ -1,9 +1,63 @@
 .header {
     height: 100vh;
     width:100%;
-    background-image: url('../media/images/674b11dc-290a-4627-a3f9-07bc0b93341b.jpeg');
+/*    background-image: url('../media/placeholder/city.jpg');
+    filter: contrast(1);*/
+
+
+
+
+    /*background-image: url('../media/placeholder/Taggenberg.jpg');*/
+
+
+
+    /*background-image: url('../media/placeholder/bottom_up.jpeg');
+    filter: contrast(1.4);
+     */
+
     background-size: cover;
+
+}
+
+.header .carousel-inner {
+    height: 100vh;
+}
+
+.header .carousel-item {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header .carousel-item img{
+
     position: absolute;
+    left: 50%;
+    margin-left: -1280px;
+    display: block;
+    width: 2560px;
+    transform: translate(0,-200px);
+}
+
+
+.header .carousel-item:nth-child(1) {
+    filter: contrast(1);
+}
+
+.header .carousel-item:nth-child(2) {
+    filter: contrast(1.2);
+}
+.header .carousel-item:nth-child(3) {
+    filter: contrast(1.4);
+}
+
+.header .carousel-item:nth-child(4) {
+    filter: contrast(1.2);
+}
+.header .carousel-item:nth-child(5) {
+    filter: contrast(1.2);
+}
+.header .carousel-item:nth-child(5) img{
+    transform: translate(0,-400px);
 }
 
 .overlay {
@@ -16,8 +70,10 @@
     height: 100%;
     margin: 50px;
 
-    position: relative;
+    top: 0;
+    position: absolute;
     background: transparent;
+    background-color: rgba(0,0,0,0.5);
     background-color: rgba(0,0,0,0.3);
     margin: 0;
 }
@@ -26,29 +82,49 @@
     color: white;
     font-family: "Times New Roman";
     position: absolute;
-    top: calc(25% - 24px);
+    top: calc(50% - 120px);
     text-align: center;
     width: 100%;
 }
 
 h1 {
-
-
-    font-size: 110px;
-    /*text-shadow: black 5px 5px;*/
-    text-transform: uppercase;
-    line-height: 150px;
+    /*text-shadow: 0 0 5px #000000;*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    line-height: 1.2;
+    text-transform: none;
+    font-weight: 400;
 }
 
+h1 p {
+    letter-spacing: 5px;
+}
 
 h1 span {
-    font-size: 25px;
-    display: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top: 1px solid white;
+    letter-spacing: 20px;
 }
+
+
+nav {
+    background: transparent;
+    font-family: Roboto;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: white;
+    font-size: 30px;
+}
+
 
 .navigation-wrap {
     with: 100%;
     z-index: 2;
     background: white;
-    height:
 }
