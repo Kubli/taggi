@@ -19,7 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
     <meta charset="utf-8"/>
-    <title>Welcome to Craft CMS</title>
+    <title>Taggenberg Beef</title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
     <meta name="referrer" content="origin-when-cross-origin"/>
@@ -206,7 +206,7 @@
         <h2>Unser Hof</h2>
         <p>Unser Hof befindet sich in Winterthur-Wülflingen oder genauer gesagt auf dem Taggenberg. Seit 1900 ist es ein Bauernhof in Besitz der Stadt Winterthur. Seit 1950 pachtet die Familie Moser den Bauernhof,
 		der seit 2013 einen neuen Laufstall erhalten hat und damit den Beginn der Umstellung auf Bio-Fleisch eingeleitet hat. Seit 5 Jahren ist der Betrieb Bio-Suisse zertifiziert. Kommen Sie jederzeit vorbei wenn Sie sich näher interessieren.</p>
-        <div id="gallery-hof" class="carousel slide" data-interval="false" data-ride="carousel">
+        <div id="gallery-hof" class="carousel slide d-none d-md-block" data-interval="false" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#gallery-hof" data-slide-to="0" class="active"></li>
                 <li data-target="#gallery-hof" data-slide-to="1"></li>
@@ -250,16 +250,26 @@
     </section>
 		<section id="form">
 		<h2>Kontaktformular</h2>
-		<form>
-			<input type="text" id="honig" value=""></input>
-			<input type="text" required placeholder="Name*"></input>
-			<input type="text" placeholder="Strasse"></input>
-			<input type="text" placeholder="PLZ/ORT"></input>
-			<input type="text" required placeholder="Telefon*"></input>
-			<input type="text" required placeholder="E-Mail"></input>
-			<input type="submit" value="Absenden" />
-		</form>
 		<p>*Pflichtfelder</p>
+		<form>
+			<div class="left">
+				<input type="text" id="honig" value=""></input>
+				<input type="text" required placeholder="Name*"></input>
+				<input type="text" placeholder="Strasse"></input>
+				<input type="text" placeholder="PLZ/ORT"></input>
+				<input type="text" required placeholder="Telefon*"></input>
+				<input type="text" required placeholder="E-Mail"></input>
+				<input type="submit" value="Absenden" />
+			</div>
+			<div class="right">
+				<p>Gewünschte Portionierung</p>
+				<label for="beef1">Filet, Huft, Hohrücken, Entrecôte:</label>
+				<input id="beef1" type="number" min="2" max="10">
+				<label for="beef2">Voressen, Geschnetzeltes, Hackfleisch:</label>
+				<input id="beef2" type="number" min="300g" max="800g"> Gramm				
+			</div>
+		</form>
+
 		
 	</section>
     <section id="contact">

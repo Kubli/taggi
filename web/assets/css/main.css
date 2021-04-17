@@ -202,6 +202,10 @@ article:last-child {
     display: block;
 }
 
+#form {
+	min-height: 380px;
+}
+
 #form #honig {
 	height: 0;
 	width: 0;
@@ -211,6 +215,7 @@ article:last-child {
 #form input {
 	width: 100%;
 	float: left;
+	clear: both;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
