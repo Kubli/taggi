@@ -212,7 +212,7 @@ article:last-child {
 	position: absolute;
 }
 
-#form input {
+#form input, #form label {
 	width: 100%;
 	float: left;
 	clear: both;
