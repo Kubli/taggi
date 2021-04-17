@@ -195,6 +195,12 @@ article:last-child {
     display: block;
 }
 
+#form #honig {
+	height: 0;
+	width: 0;
+	position: absolute;
+}
+
 @media (max-width: 780px){
     h1 {
         font-size: 40px;
