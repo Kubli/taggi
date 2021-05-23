@@ -32,6 +32,7 @@ html {
 
 .label img{
 	max-height: 130px;
+	max-width: 100%
 }
 
 #entry-image img {
@@ -252,6 +253,14 @@ article:last-child {
 @media (max-width: 570px) {
     h1 {
         font-size: 30px;
+    }
+
+
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 14px;
     }
 
 
