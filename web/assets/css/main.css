@@ -30,6 +30,10 @@ html {
     visibility: hidden;
 }
 
+.label:last-child {
+	margin-left: 50px;
+}
+
 .label img{
 	max-height: 130px;
 	max-width: 100%
