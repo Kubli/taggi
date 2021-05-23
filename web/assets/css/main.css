@@ -30,6 +30,10 @@ html {
     visibility: hidden;
 }
 
+.label {
+	max-height: 130px;
+}
+
 #entry-image img {
     max-width: 100%;
 }
