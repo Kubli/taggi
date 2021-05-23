@@ -269,6 +269,9 @@ article:last-child {
 		top: 50%;
 	}
 	
+	.label:last-child {
+		margin-top: 50px;
+	}
 
 }
 
@@ -277,9 +280,7 @@ article:last-child {
         font-size: 30px;
     }
 	
-	.label:last-child {
-		margin-top: 50px;
-	}
+
 
 
 }
