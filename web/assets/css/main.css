@@ -41,6 +41,10 @@ html {
 	max-width: 100%
 }
 
+#entry-image {
+	position: relative;
+}
+
 #entry-image img {
     max-width: 100%;
 }
@@ -260,6 +264,10 @@ article:last-child {
     .header {
         height: auto;
     }
+	
+	.hero {
+		top: 50%;
+	}
 }
 
 @media (max-width: 570px) {
@@ -271,6 +279,9 @@ article:last-child {
 }
 
 @media (max-width: 460px) {
+	
+
+	
     h1 {
         font-size: 14px;
     }
