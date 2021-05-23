@@ -23,6 +23,8 @@ html {
 
 }
 
+
+
 .anchor {
 	display: block;
     position: relative;
@@ -174,16 +176,22 @@ nav > .container-fluid {
     font-family: Times New Roman;
 }
 
-#scroll {
-    margin-top: 13%;
+#scroll svg{
     height: 50px;
     fill: white;
 }
 
-#scroll:hover {
+#scroll svg:hover {
     fill: cornflowerblue;
-
 }
+
+#scroll {
+	position: absolute;
+    left: calc(50% - 25px);
+    bottom: 50px;
+	
+}
+
 
 .nav-link {
     color: black;
