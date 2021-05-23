@@ -268,12 +268,18 @@ article:last-child {
 	.hero {
 		top: 50%;
 	}
+	
+
 }
 
 @media (max-width: 570px) {
     h1 {
         font-size: 30px;
     }
+	
+	.label:last-child {
+		margin-top: 50px;
+	}
 
 
 }
