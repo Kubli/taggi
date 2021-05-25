@@ -101,15 +101,12 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block" src="assets/media/placeholder/city.jpg" alt="Bild 1">
+                <img style="transform: translate(0,-290px);" class="d-block" src="assets/media/images/1b2225e4-6963-4cca-8c73-9695304d4a7b.jpeg"
+                     alt="Kühe auf der Weide">
             </div>
             <div class="carousel-item">
-                <img class="d-block" src="assets/media/images/1b2225e4-6963-4cca-8c73-9695304d4a7b.jpeg"
-                     alt="Bild 2">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block" src="assets/media/images/5bd089eb-7156-47ec-9fd0-8a60152fa4a3.jpeg"
-                     alt="Bild 3">
+                <img style="transform: translate(0,-785px);" class="d-block" src="assets/media/images/5bd089eb-7156-47ec-9fd0-8a60152fa4a3.jpeg"
+                     alt="Wohnhaus">
             </div>
         </div>
         <a class="carousel-control-prev" href="#entry-slider" role="button" data-slide="prev">
@@ -160,7 +157,7 @@
 				<p>Erfahren Sie mehr über unser Taggenberg Beef und laden Sie ein Bestellformular herunter.</p>
 				
 				<a class="btn btn-primary" href="#beef-anchor">Infos</a>
-				<a class="btn btn-primary" href="assets/media/Bestellung.pdf" download>Bestellformular</a>
+				<a class="btn btn-primary" href="assets/media/Bestellung2021.pdf" download>Bestellformular</a>
 				<p></p>
             </div>
             <div class="col-md-6">
@@ -301,6 +298,7 @@
             <span>Taggenbergstrasse 76</span>
             <span>8408 Winterthur</span>
             <span>Schweiz</span>
+			<span class="mail" data-email="infoATtaggenberg-beefDOTcom">E-Mail</a>
         </p>
         <div class="d-none d-lg-block">
             <iframe title="Google Maps - Ansicht Taggenberg Hof" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.498169540771!2d8.684387995729521!3d47.51916351033936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a9bf8bbf4e981%3A0x4497ec25421475ad!2sTaggenbergstrasse%2076%2C%208408%20Winterthur!5e0!3m2!1sde!2sch!4v1595871859496!5m2!1sde!2sch" width="1170" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -315,5 +313,19 @@
 <footer>
 <a href="assets/media/datenschutz.html">Datenschutzerklärung</a>
 </footer>
+
+<script type="text/javascript">
+jQuery(window).load(function () {
+    jQuery('.mail').on('click',function(event)
+    {
+        event.preventDefault();
+        jQuery(this).off("click");
+        var email = jQuery(this).attr("data-email").replace(/AT/,'@').replace(/DOT/,'.');
+        jQuery(this).removeClass("hiddenMail");
+        jQuery(this).html(email);
+        jQuery(this).attr("href","mailto:"+email);
+    });
+});
+</script>
 </body>
 </html>
