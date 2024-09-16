@@ -23,7 +23,16 @@ html {
 
 }
 
+.payments {
+    flex-direction: row;
+    align-items: flex-end;
+    row-gap: 10px;
+    z-index: 999;
+}
 
+.payments img {
+    margin-right: 10px;
+}
 
 .anchor {
 	display: block;
@@ -139,7 +148,7 @@ h2 {
     border-bottom: 1px solid grey;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    font-style: italic;
+    font-weight: bold;
 }
 
 h3 {
@@ -164,7 +173,7 @@ nav > .container-fluid {
 }
 
 #navbarNav {
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 
@@ -249,11 +258,25 @@ article:last-child {
 	margin-bottom: 10px;
 }
 
+@media (max-width: 1040px){
+
+    h1 p{
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        width: 80%;
+        margin: 0 auto 10px auto;
+    }
+    h1 span {
+        border-top: none;
+    }
+}
+
 @media (max-width: 780px){
     h1 {
         font-size: 40px;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
     }
+
     .overlay {
         background-color: transparent;
         height: auto;
