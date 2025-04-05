@@ -24,8 +24,8 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
     <meta name="referrer" content="origin-when-cross-origin"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"></script>
@@ -35,6 +35,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+
+
+
 
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
@@ -59,13 +62,10 @@
 
 <div class="header">
 
-    <nav class="navbar navbar-expand-lg fixed-top container-fluid d-none d-md-block">
+    <nav class="navbar navbar-expand-lg fixed-top container-fluid d-md-block navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Taggenberg Beef</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -85,12 +85,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-flex payments">
-                <a target="_blank" href="https://coinpages.io/listings/schweiz/zurich-ch/winterthur/hofladen-bio/">
-                    <img src="assets/media/images/Bitcoin_logo.png" title="Wir akzeptieren Bitcoin" width="50" height="50"/>
-                </a>
-                <img src="assets/media/images/twint_logo_dark.png" title="Wir akzeptieren Twint" height="50"/>
-            </div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
         </div>
     </nav>
 
@@ -177,10 +175,25 @@
             <div class="col-md-6">
                 <h3>BIO Natura-Beef</h3>
 
-				<p>Erfahren Sie mehr über unser Taggenberg Beef und laden Sie ein Bestellformular herunter.</p>
+				<p>Erfahren Sie mehr über unser Taggenberg Beef und bestellen sie direkt online.</p>
 
 				<a class="btn btn-primary" href="#beef-anchor">Infos</a>
 				<a class="btn btn-primary" target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZAALnUuWJUM1c0RlozVVAyWUxFVUFUR1RDVVVDMzVJOC4u">Bestellformular</a>
+                <p></p>
+                <p>Zahlungsmittel:</p>
+                <div class="payments">
+                    <a target="_blank" href="https://coinpages.io/listings/schweiz/zurich-ch/winterthur/hofladen-bio/" class="btc" >
+                        <img src="assets/media/images/Bitcoin_logo.png" title="Wir akzeptieren Bitcoin" width="32" height="32"/>
+                    </a>
+                    <img src="assets/media/images/twint_logo_dark.png" title="Wir akzeptieren Twint" height="32" class="twint"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" title="Einzahlungsschein" width="32" height="32" fill="currentColor" class="bi bi-receipt" viewBox="0 0 16 16">
+                        <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27m.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0z"/>
+                        <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                        <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"/>
+                    </svg>
+                </div>
 				<p></p>
             </div>
             <div class="col-md-6">
@@ -350,6 +363,10 @@ jQuery('document').ready(function () {
         jQuery(this).removeClass("hiddenMail");
         jQuery(this).html(email);
         jQuery(this).attr("href","mailto:"+email);
+    });
+
+    jQuery('.navbar-nav>li>a').on('click', function(){
+        jQuery('.navbar-collapse').collapse('hide');
     });
 });
 </script>

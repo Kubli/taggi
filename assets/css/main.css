@@ -32,6 +32,11 @@ html {
 
 .payments img {
     margin-right: 10px;
+    vertical-align: top;
+}
+
+.bi-receipt {
+    margin-right: 10px;
 }
 
 .anchor {
@@ -298,6 +303,10 @@ article:last-child {
 @media (max-width: 570px) {
     h1 {
         font-size: 30px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
     }
 	
 
